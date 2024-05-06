@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+<link href="CSS/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>ecomm</title>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-md">
+  <img src="eshop.png" id="logo" /> <h5 id="brandname">Online Shop</h5>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Electronics</a>
+        <a class="dropdown-item" href="#">Stationary</a>
+        <a class="dropdown-item" href="#">Clothes</a>
+        <a class="dropdown-item" href="#">Furniture</a>
+      </div>
+    </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>    
+    </ul>
+  </div>
+
+  <div class="icons">
+  	<img src="search.png">
+  	<a href="#loginmodal" data-toggle="modal"><img src="login.png"></a>
+  	<img src="shoppingcart.png">
+  </div>
+
+</nav>
+
+<!---new section--->
+
+<div class="container-fluid" id="home">
+	<div class="row">
+		<div class="col-md-6">
+			<h1>THE BIGGEST SALE</h1>
+			<h2>Category <span id="changetext"> </span></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<h2>50% OFF</h2>
+			<button class="btn btn-warning">Shop Now</button>
+		</div>
+
+		<div class="col-md-6">
+			<img src="ecomm.png" class="img-fluid">
+		</div>
+	</div>
+</div> <br><br>
+
+<!---end of new section--->
+
+<!---social media rating--->
+
+<div class="container" id="ratings">
+<h1 class="text-center">Ratings</h1>
+<div class="row">
+
+	<div class="col-md-3 text-center">
+		<div class="card">
+			<div class="text-center">
+			<img src="google.png">
+			</div>
+			<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+			</div>
+			<p>5 star rating out of 5</p>
+		</div>
+	</div>
+	<div class="col-md-3 text-center">
+		<div class="card">
+			<div class="text-center">
+			<img src="facebook.png">
+			</div>
+			<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-half"></i>
+			</div>
+			<p>4.5 star rating out of 5</p>
+		</div>
+	</div>
+	<div class="col-md-3 text-center">
+		<div class="card">
+			<div class="text-center">
+			<img src="twitter.png">
+			</div>
+			<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+			</div>
+			<p>5 star rating out of 5</p>
+		</div>
+	</div>
+	<div class="col-md-3 text-center">
+		<div class="card">
+			<div class="text-center">
+			<img src="justdial.png">
+			</div>
+			<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-half"></i>
+			</div>
+			<p>4.5 star rating out of 5</p>
+		</div>
+	</div>
+</div>
+</div> <br><br>
+
+<!---end of social media rating--->
+
+<!---product section--->
+
+<div class="container" id="product-section">
+	<h1 class="text-center">Product</h1>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<img src="hoodie1.jpg">
+				<h3 class="text-center">Hoodie</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$100 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<img src="hoodie2.jpg">
+				<h3 class="text-center">Hoodie</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$150 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<img src="hoodie3.jpg">
+				<h3 class="text-center">Hoodie</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$250 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<img src="hoodie4.jpg">
+				<h3 class="text-center">Hoodie</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$400 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+
+		<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<img src="shirt1.jpg">
+				<h3 class="text-center">Shirt</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$100 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<img src="shirt2.jpg">
+				<h3 class="text-center">Shirt</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$150 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<img src="shirt3.jpg">
+				<h3 class="text-center">Shirt</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$250 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<img src="shirt4.jpg">
+				<h3 class="text-center">Shirt</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$400 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<img src="jeans1.jpg">
+				<h3 class="text-center">Jeans</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$100 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<img src="jeans2.jpg">
+				<h3 class="text-center">Jeans</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$150 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<img src="jeans3.jpg">
+				<h3 class="text-center">Jeans</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$250 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<img src="jeans4.jpg">
+				<h3 class="text-center">Jeans</h3>
+				<div id="star">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				</div>
+				<h5>$400 <span><img src="add.png" id="add-btn"></span></h5>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!---end of product section--->
+
+<!---add special collection news--->
+
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Special <span>Collection</span></h1>
+				<p>Get flat 80% to 90% off on mens dresses and accessories. Buy online the latest collection of mens shoes - Free Shipping, Cash On Delivery, Easy Returns & Exchange. Shop Now</p>
+				<h2>Upto 90% OFF</h2><br>
+				<button class="btn btn-warning">Shop Now</button>
+			</div>
+
+			<div class="col-md-6 text-center">
+				<img src="shoe.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!---end of add special collection news--->
+
+<!---slick slider--->
+
+<div style="background: #f5f0f0;">
+<div class="container">
+	<div class="row responsive">
+		<div class="col-md-12">
+			<div class="card">
+				<img src="shirt1.jpg" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="card">
+				<img src="shirt2.jpg" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="card">
+				<img src="shirt3.jpg" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="card">
+				<img src="hoodie1.jpg" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="card">
+				<img src="hoodie2.jpg" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="card">
+				<img src="hoodie3.jpg" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="card">
+				<img src="hoodie4.jpg" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="card">
+				<img src="shirt4.jpg" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!---end of slick slider--->
+
+<!---about us--->
+
+<div class="container" style="margin-top: 100px;">
+	<h1 class="text-center">About Us</h1>
+	<div class="row" style="margin-top: 50px;">
+		<div class="col-md-6">
+			<img src="shoes10.jpg" class="img-fluid">
+		</div>
+		<div class="col-md-6">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+</div>
+
+<!---end of about us--->
+
+<!---footer section--->
+
+<div class="container-fluid" id="footer">
+	<div class="row">
+		<div class="col-md-3">
+			<h4>Address</h4>
+			<p>XYZ Street, Bangalore</p>
+			<p>Contact - 9876543210</p>
+			<p>xyz@gmail.com</p>
+		</div>
+		<div class="col-md-3">
+			<h4>Useful Links</h4>
+			<ul>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h4>Our Services</h4>
+			<ul>
+				<li><a href="#">Furnitures</a></li>
+				<li><a href="#">Electronics</a></li>
+				<li><a href="#">Home Decor</a></li> 
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h4>Social Links</h4>
+			<ul id="socialicons">
+				<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+				<li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+				<li><a href="#"><i class="bi bi-instagram"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container text-center">
+		<p><i class="bi bi-c-circle"></i> Copyright | All Rights are reserved</p>
+	</div>
+</div>
+
+<!---end of footer section--->
+
+<!---login modal--->
+
+<div class="modal" id="loginmodal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5>Login</h5>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+					Email Id - <input type="email" class="form-control">
+					</div>
+					<div class="form-group">
+					Password - <input type="password" class="form-control">
+					</div>
+					<div class="form-group">
+					<button type="submit" class="btn btn-success">Login</button>
+					</div>
+				</form>
+				<p>Don't Have an Account? <a href="#regmodal" data-toggle="modal" data-dismiss="modal">Sign Up</a></p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger button-sm" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!---end of login modal--->
+
+<!---registration modal--->
+
+<div class="modal" id="regmodal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5>Registration</h5>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						Full Name - <input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						Email Id - <input type="email" class="form-control" id="email">
+					</div>
+					<div class="form-group">
+						Password - <input type="password" class="form-control" id="password">
+					</div>
+					<div class="form-group">
+						Contact - <input type="tel" class="form-control">
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-success">Register</button>
+					</div>
+				</form>
+				<p>Already Have an Account <a href="#loginmodal" data-toggle="modal" data-dismiss="modal">Sign In</a></p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger button-sm" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!---end of registration modal--->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+	
+	$('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+</script>
+
+<script>
+	
+	$(document).ready(function(){
+		$("#password").keyup(function(){
+			if(checkpassword())
+			{
+				console.log("Validated");
+			}
+			else{
+				console.log("Not validated");
+			}
+		})
+		
+	})
+
+	function checkpassword()
+	{
+		let pwd = $("#password").val();
+		let pwdexp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@.#$!%*?&^])[A-Za-z\\d@.#$!%*?&]{8,15}$/
+		if (pwdexp.text(pwd))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+
+	}
+
+</script>
+
+</body>
+</html> 

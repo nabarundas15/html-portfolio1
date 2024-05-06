@@ -1,0 +1,147 @@
+#logo {
+	width: 70px;
+}
+
+.navbar {
+	background-color: #FAB70B;
+}
+
+.nav-link {
+	color: #fff;
+	font-family: 'Merriweather', serif;
+}
+
+#brandname {
+	font-family: 'Merriweather', serif;
+}
+
+.nav-link:hover {
+	color: black;
+	text-shadow: .5px .5px 1px black;
+}
+
+.icons img {
+	width: 30px;
+	margin-left: 10px;
+}
+
+#home {
+	width: 100%;
+	height: 85vh;
+	background-color: #FAFBFC;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Merriweather', serif;
+}
+
+#home h1 {
+	font-size: 60px;
+	letter-spacing: 4px;
+	text-shadow: 1px 1px 1px black;
+}
+
+#changetext {
+	color: #FE9900;
+	font-weight: bold;
+}
+
+#changetext:after {
+	content: '';
+	animation-name: changetextcontent;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes changetextcontent
+{
+	20% {
+		content: 'Shirts';
+	}
+	40% {
+		content: 'Pants';
+			}'
+	60% {
+		content: 'Hoodies';
+	}
+	80% {
+		content: 'Watches';
+	}
+	100% {
+		content: 'Shoes';
+	}
+}
+
+#ratings img {
+	width: 40px;
+}
+
+#star {
+	color: orange;
+	text-align: center;
+}
+
+#ratings .card {
+	padding: 30px;
+	height: 150px;
+	border-radius: 20px;
+}
+
+#product-section #add-btn {
+	width: 25px;
+	float: right;
+}
+
+#product-section h5 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#product-section .card {
+	height: 440px;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+#product-section img {
+	width: 200px;
+}
+
+#product-section .row {
+	margin-top: 30px;
+}
+
+.jumbotron {
+	margin-top: 50px;
+	height: 350px;
+	display: flex;
+	align-items: flex-start;
+	background: linear-gradient(to bottom, #87ceeb, #add8e6, #c8e6f5, #e0f2f8, #f0f8ff);
+	font-family: 'Merriweather', serif;
+	clip-path: polygon(0 0, 100% 0, 100% 83%, 64% 89%, 0 100%, 0 49%);
+}
+
+.jumbotron h1 {
+	font-family: 'Pacifico', cursive;
+	color: white;
+}
+
+.jumbotron h1 span {
+	color: yellow;
+}
+
+#socialicons li {
+	display: inline-block;
+	width: 30px;
+}
+
+#socialicons li i {
+	color: black;
+}
+
+#footer {
+	margin-top: 100px; 
+	background-color: #F5F7F9;
+}
+
+/* font-family: 'Merriweather', serif; */
